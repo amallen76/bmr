@@ -21,7 +21,7 @@ YOUR_EMAIL="reedz@erau.edu"
 # !! DO NOT SAVE THE KEY IN THIS config.txt FILE   !!
 #
 
-: "${XIMERA_NAME:=basicMathRefresherERAU}"
+: "${XIMERA_NAME:=bmr}"
 ## : "${XIMERA_URL:=http://localhost:2000/}"
 ## : "${XIMERA_URL:=https://xerxes.ximera.org/}"
 : "${XIMERA_URL:=https://ximera.osu.edu/}"
