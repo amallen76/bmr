@@ -20,7 +20,7 @@ Fractions (ERAU | 7:00)
 % filepath: /code/fractions.tex
 % ...existing code...
 
-\section*{Practice: Identifying Numerator and Denominator}
+\section*{Identifying Numerator and Denominator}
 
 For each fraction below, identify the numerator and the denominator.
 
@@ -42,15 +42,24 @@ For each fraction below, identify the numerator and the denominator.
 % filepath: /code/fractions.tex
 % ...existing code...
 
-\section*{Practice: Writing Fractions for Shaded Portions}
+\section*{Proper and Improper Fractions}
 
-For each figure described below, write a fraction representing the shaded portion.
+For each fraction below, identify whether it is a proper fraction or an improper fraction.
 
 \begin{problem}
 \begin{enumerate}
-    \item A rectangle is divided into 8 equal parts. If 5 parts are shaded, what fraction of the rectangle is shaded?
-    \item A circle is split into 6 equal sections. If 2 sections are shaded, what fraction of the circle is shaded?
-    \item A square is divided into 4 equal smaller squares. If 3 of the smaller squares are shaded, what fraction of the square is shaded?
+    \item $\frac{5}{8}$ is a \wordChoice{
+        \choice[correct]{proper fraction}
+        \choice{improper fraction}
+    }
+    \item $\frac{9}{4}$ is a \wordChoice{
+        \choice{proper fraction}
+        \choice[correct]{improper fraction}
+    }
+    \item $\frac{7}{7}$ is a \wordChoice{
+        \choice{proper fraction}
+        \choice[correct]{improper fraction}
+    }
 \end{enumerate}
 \end{problem}
 
@@ -59,6 +68,86 @@ For each figure described below, write a fraction representing the shaded portio
 Mixed Numbers (ERAU| 3:48)
 
 \youtube{placeholder}
+
+% filepath: /code/fractions.tex
+% ...existing code...
+
+\section*{Improper Fractions and Mixed Numbers}
+
+Write a fraction of the shaded portion of the figure as an improper fraction and a mixed number below.
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+% First circle: all quarters filled
+\foreach \i in {0,90,180,270} {
+  \begin{scope}
+    \clip (0,0) circle (0.8);
+    \fill[blue!30] (0,0) -- (\i:0.8) arc (\i:\i+90:0.8) -- cycle;
+  \end{scope}
+}
+\draw (0,0) circle (0.8);
+\foreach \i in {0,90,180,270} {
+  \draw (0,0) -- (\i:0.8);
+}
+
+% Second circle: three quarters filled
+\foreach \i in {0,90,180} {
+  \begin{scope}
+    \clip (2,0) circle (0.8);
+    \fill[blue!30] (2,0) -- (\i:90) arc (\i:-50:270) -- cycle;
+  \end{scope}
+}
+\draw (2,0) circle (0.8);
+\foreach \i in {0,90,180,270} {
+  \draw (2,0) -- ({2+cos(\i)}, {sin(\i)});
+}
+
+\end{tikzpicture}
+\end{center}
+
+% ...existing code...
+
+% filepath: /code/fractions.tex
+% ...existing code...
+
+\section*{Writing Mixed Numbers as Improper Fractions}
+
+For each mixed number below, write it as an improper fraction.
+
+\begin{problem}
+$3\frac{2}{5} = \answer{\frac{17}{5}}$
+\end{problem}
+
+\begin{problem}
+$1\frac{3}{4} = \answer{\frac{7}{4}}$
+\end{problem}
+
+\begin{problem}
+$5\frac{1}{6} = \answer{\frac{31}{6}}$
+\end{problem}
+
+% ...existing code...
+
+% filepath: /code/fractions.tex
+% ...existing code...
+
+\section*{Practice: Writing Improper Fractions as Mixed Numbers}
+
+For each improper fraction below, write it as a mixed number.
+
+\begin{problem}
+$\frac{11}{4} = \answer{2\frac{3}{4}}$
+\end{problem}
+
+\begin{problem}
+$\frac{17}{5} = \answer{3\frac{2}{5}}$
+\end{problem}
+
+\begin{problem}
+$\frac{22}{7} = \answer{3\frac{1}{7}}$
+\end{problem}
+
+% ...existing code...
 
 Simplifying Fractions (ERAU| 5:17)
 
