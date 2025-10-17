@@ -19,7 +19,57 @@ Linear Inequalities in Two Variables (ERAU|7:57)
 
 \youtube{placeholder}
 
+% ...existing code...
 
+\section*{Graphing Linear Inequalities in Two Variables}
+
+\begin{problem}
+Graph the inequality \(y > -2x + 3\). Describe the boundary and the solution region. Is the point \((0,0)\) a solution?
+$\answer{\text{Boundary: dashed }y=-2x+3;\ \text{Shade above the line};\ (0,0)\ \text{is not a solution}}$
+\begin{feedback}
+Rewrite as \(y > -2x+3\). The boundary is the line \(y=-2x+3\) and is dashed because the inequality is strict. Test the point \((0,0)\): \(0 > 3\) is false, so \((0,0)\) is not in the solution region. Shade the region of points with \(y\) greater than \(-2x+3\).
+\end{feedback}
+\end{problem}
+
+\begin{problem}
+Graph the inequality \(2x + y \le 4\). Describe the boundary and the solution region. Is the point \((0,0)\) a solution?
+$\answer{\text{Boundary: solid }y=4-2x;\ \text{Shade below or on the line};\ (0,0)\ \text{is a solution}}$
+\begin{feedback}
+Solve for \(y\): \(y \le 4-2x\). The boundary is the line \(y=4-2x\) and is solid because \(\le\) includes the boundary. Test \((0,0)\): \(2(0)+0 \le 4\) gives \(0\le4\), true. Shade the region at or below the line.
+\end{feedback}
+\end{problem}
+
+\begin{problem}
+Graph the inequality \(x - 3y \ge 6\). Describe the boundary and the solution region. Is the point \((6,0)\) a solution?
+$\answer{\text{Boundary: solid }y=\dfrac{x-6}{3};\ \text{Shade below or on the line};\ (6,0)\ \text{is a solution}}$
+\begin{feedback}
+Rewrite: \(x-3y\ge6 \Rightarrow -3y\ge6-x \Rightarrow 3y\le x-6 \Rightarrow y\le\dfrac{x-6}{3}\). The boundary is \(y=(x-6)/3\) and is solid (``\(\ge\)'' includes boundary). Test \((6,0)\): \(6-3(0)=6\ge6\) is true, so \((6,0)\) lies on the boundary and is included. Shade the region at or below the line.
+\end{feedback}
+\end{problem}
+
+% ...existing code...
+
+% ...existing code...
+
+\section*{Graphing Linear Inequalities in One Variable}
+
+\begin{problem}
+Graph the inequality \(x > 3\). Describe the boundary and the solution region. Is the point \(3\) a solution?
+$\answer{\text{Boundary: open circle at }3;\ \text{Shade to the right};\ 3\ \text{is not a solution}}$
+\begin{feedback}
+The boundary is the point \(x=3\) shown with an open circle because the inequality is strict. The solution set is all real numbers greater than 3 (shade to the right). Test \(x=4\): \(4>3\) is true. Test \(x=3\): \(3>3\) is false, so \(3\) is not included.
+\end{feedback}
+\end{problem}
+
+\begin{problem}
+Graph the compound inequality \(-2 \le x \le 4\). Describe the boundary and the solution region. Is the point \(0\) a solution?
+$\answer{\text{Boundary: closed at }-2\text{ and }4;\ \text{Shade between and including endpoints};\ 0\ \text{is a solution}}$
+\begin{feedback}
+Both endpoints are included, so use solid dots at \(-2\) and \(4\). The solution set is all real numbers between \(-2\) and \(4\), inclusive. Test \(x=0\): \(-2\le0\le4\) is true, so \(0\) lies in the solution set.
+\end{feedback}
+\end{problem}
+
+% ...existing code...
 
 \section*{Systems of Linear Inequalities in Two Variables}
 
@@ -27,6 +77,86 @@ Systems of Linear Inequalities in Two Variables (ERAU|6:45)
 
 \youtube{placeholder}
 
+% ...existing code...
 
+\section*{Graphing Systems of Linear Inequalities in Two Variables}
+
+\begin{problem}
+Graph the system and describe the solution region. Give one test point that is in the solution.
+\[
+\begin{cases}
+y > x - 1\\[4pt]
+y < -x + 3
+\end{cases}
+\]
+$\answer{\text{Region strictly between the two dashed lines; e.g. }(1,1)}$
+\begin{feedback}
+Boundaries: $y=x-1$ and $y=-x+3$, both dashed because the inequalities are strict. Shade the region above $y=x-1$ and below $y=-x+3$. Test $(1,1)$: $1>1-1=0$ (true) and $1< -1+3=2$ (true), so $(1,1)$ lies in the solution region.
+\end{feedback}
+\end{problem}
+
+\begin{problem}
+Graph the system and describe the solution region. Give one test point that is in the solution.
+\[
+\begin{cases}
+y \ge 2x - 2\\[4pt]
+y \le \tfrac{1}{2}x + 4
+\end{cases}
+\]
+$\answer{\text{Region between the two lines including boundaries; e.g. }(2,3)}$
+\begin{feedback}
+Boundaries: $y=2x-2$ (solid) and $y=\tfrac{1}{2}x+4$ (solid). Shade the region on or above $y=2x-2$ and on or below $y=\tfrac{1}{2}x+4$. Test $(2,3)$: $3\ge2(2)-2=2$ (true) and $3\le\tfrac{1}{2}(2)+4=5$ (true), so $(2,3)$ is in the solution region.
+\end{feedback}
+\end{problem}
+
+\begin{problem}
+Graph the system and determine whether any solution exists. If none, explain why.
+\[
+\begin{cases}
+y > x + 1\\[4pt]
+y \le x - 1
+\end{cases}
+\]
+$\answer{No\ solution}$
+\begin{feedback}
+The first inequality requires $y-x>1$, while the second requires $y-x\le-1$. These conditions cannot both hold for the same point, so the solution set is empty (no region to shade).
+\end{feedback}
+\end{problem}
+
+% ...existing code...
+
+% ...existing code...
+
+\section*{Systems of Linear Inequalities in One Variable}
+
+\begin{problem}
+Solve the system by graphing:
+\[
+\begin{cases}
+x > -1\\[4pt]
+x \le 4
+\end{cases}
+\]
+$\answer{(-1,4]}$
+\begin{feedback}
+Intersection: all $x$ greater than $-1$ and at most $4$. Boundary at $-1$ is open, at $4$ is closed. Solution set is $(-1,4]$. Test $x=0$: $0>-1$ and $0\le4$ (both true).
+\end{feedback}
+\end{problem}
+
+\begin{problem}
+Solve the system by graphing:
+\[
+\begin{cases}
+x \le -2\\[4pt]
+x < 3
+\end{cases}
+\]
+$\answer{(-\infty,-2]}$
+\begin{feedback}
+Intersection: numbers at most $-2$ that are also less than $3$. The tighter restriction is $x\le-2$, so the solution is $(-\infty,-2]$. Boundary at $-2$ is closed. Test $x=-3$: $-3\le-2$ and $-3<3$ (both true).
+\end{feedback}
+\end{problem}
+
+% ...existing code...
 
 \end{document}
